@@ -12,7 +12,7 @@ export default function Home() {
 
       <Layout>
         <main>
-          this is main
+          this is main area
         </main>
       </Layout>
     </>
