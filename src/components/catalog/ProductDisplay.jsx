@@ -33,7 +33,7 @@ export const ProductDisplay = ({ productId }) => {
         <div>
           <h1>{title}</h1>
 
-          {/* inser ProductRatings.jsx */}
+          {/* insert ProductRatings.jsx */}
 
           <div>
             <p>{description}</p>

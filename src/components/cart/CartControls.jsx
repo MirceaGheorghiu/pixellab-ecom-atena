@@ -1,16 +1,19 @@
 import Link from 'next/link';
-import { CgShoppingCart } from 'react-icons/cg';
+import { CartQuantity } from '.';
 
 export const CartControls = () => {
   return (
-    <ul className="border border-l-0 border-zinc-200 transition-colors hover:bg-neutral-900">
+    <ul className="border border-l-0 border-zinc-200 transition-colors hover:bg-neutral-900 hover:text-white">
       <li>
         <Link
           href="/cart"
           title="Cart"
-          className="w-20 h-20 flex justify-center items-center hover:text-cyan-500"
+          className="w-20 h-20 flex justify-center items-center"
         >
-          <CgShoppingCart size="24"></CgShoppingCart>
+          <span className="relative">
+            Cart
+            <CartQuantity className="absolute -top-4 -right-4"></CartQuantity>
+          </span>
         </Link>
       </li>
     </ul>
